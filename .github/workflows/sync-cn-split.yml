@@ -28,7 +28,7 @@ jobs:
           CF_PROFILE_ID: ${{ secrets.CF_PROFILE_ID }}
           MODE: exclude                     # 可改成 include
         run: python cf-zt-cn-split.py
- sync2:
+  sync2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
