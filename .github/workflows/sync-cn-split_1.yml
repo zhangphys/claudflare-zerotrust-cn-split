@@ -8,7 +8,7 @@ on:
   workflow_dispatch:         # 手动触发按钮
 
 jobs:
-  sync_zero_trust_team_openscience:
+  sync_zero_trust_team_1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           MODE: exclude                     # 可改成 include
         run: python cf-zt-cn-split.py
         
-  sync_zero_trust_team_openacademy:
+  sync_zero_trust_team_2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
